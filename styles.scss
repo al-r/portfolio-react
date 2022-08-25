@@ -1,0 +1,79 @@
+.home {
+  background: transparent url("static/img/bg-home.png") no-repeat center right scroll;
+  background-size: contain;
+}
+.home [id^="text-"] {
+  color: #000;
+  font-family: "Century Gothic", "Apple Gothic", Verdana, Arial, sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  position: relative;
+}
+@media screen and (max-width: 550px) {
+  .home [id^="text-"] {
+      font-size: 18px;
+  }
+}
+.home #text-1 {
+  margin: 12% 0 0;
+}
+.home #text-3 {
+  height: 40px;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+.separator {
+  -webkit-animation: sepGrow 1s ease-in-out 1s forwards;
+  -moz-animation: sepGrow 1s ease-in-out 1s forwards;
+  -ms-animation: sepGrow 1s ease-in-out 1s forwards;
+  -o-animation: sepGrow 1s ease-in-out 1s forwards;
+  animation: sepGrow 1s ease-in-out 1s forwards;
+  background-color: #ac2f20;
+  width: 0px;
+  height: 8px;
+}
+@media screen and (max-width: 550px) {
+  .separator {
+      width: 76px;
+  }
+}
+.highlight {
+  background-color: rgba(254, 154, 97, 0.85);
+  color: #FFF;
+}
+#textStatic {
+  display: inline-block;
+  font-family: "Century Gothic", "Apple Gothic", Verdana, Arial, sans-serif;
+  height: 32px;
+  padding: 5px 0;
+  position: absolute;
+  top: 0;
+}
+#textRandom {
+  background-color: transparent;
+  display: inline-block;
+  margin-top: 5px;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 92px;
+  -webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -ms-transition: top 1s;
+  -o-transition: top 1s;
+  transition: top 1s;
+}
+@media screen and (max-width: 550px) {
+  #textRandom {
+      background-color: rgba(255, 255, 255, 0.75);
+      left: 52px;
+  }
+}
+#textRandom li {
+  display: block;
+  font-family: "Century Gothic", "Apple Gothic", Verdana, Arial, sans-serif;
+  height: 32px;
+  padding: 0;
+  white-space: nowrap;
+}
